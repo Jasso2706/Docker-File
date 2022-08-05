@@ -3,7 +3,7 @@ Hola para utilizar el docker file por favor seguir los siguientes comandos:
 mkadir prueba
 cd prueba
 vi prueba (una vez en VI pegar lo siguiente)
-ROM httpd:2.4
+FROM httpd:2.4
 COPY index.html /usr/local/apache2/htdocs/index.html
 RUN  mkdir -p /run/apache2/ && \
      chown www-data:www-data /run/apache2/ && \
